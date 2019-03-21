@@ -1,7 +1,8 @@
-package com.invertase.rnfirebasestarter;
+package com.kullki.rnfirebasetest;
 
 import android.annotation.SuppressLint;
 import android.app.Application;
+import android.support.multidex.MultiDexApplication;
 
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactNativeHost;
@@ -30,7 +31,7 @@ import io.invertase.firebase.storage.RNFirebaseStoragePackage;
 import java.util.Arrays;
 import java.util.List;
 
-public class MainApplication extends Application implements ReactApplication {
+public class MainApplication extends MultiDexApplication implements ReactApplication {
 
   private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
     @Override

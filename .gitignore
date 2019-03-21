@@ -2,6 +2,12 @@
 #
 .DS_Store
 
+# Editor
+.vscode/
+android/**/.project
+android/**/.settings/
+android/**/.classpath
+
 # Xcode
 #
 build/
@@ -59,8 +65,8 @@ buck-out/
 #
 .expo/
 /ios/Pods/
-# google-services.json
-# GoogleService-Info.plist
+google-services.json
+GoogleService-Info.plist
 
 # RNFirebaseStarter
 yarn.lock
