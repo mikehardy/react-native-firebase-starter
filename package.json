@@ -28,6 +28,7 @@
     "formik": "^1.5.1",
     "react": "16.6.3",
     "react-native": "0.58.6",
+    "react-native-camera": "^2.0.2",
     "react-native-firebase": "^5.2.0"
   }
 }

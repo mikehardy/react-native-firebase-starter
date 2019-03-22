@@ -105,6 +105,10 @@ android {
   dexOptions {
     javaMaxHeapSize "4g"
   }
+  // Because of an AndroidX / FirebasePerformancePlugin compilation issue
+  packagingOptions {
+    exclude 'META-INF/androidx.exifinterface_exifinterface.version'
+  }
   compileSdkVersion rootProject.ext.compileSdkVersion
   buildToolsVersion rootProject.ext.buildToolsVersion
 
@@ -119,6 +123,8 @@ android {
     }
     // because of firestore:
     multiDexEnabled true
+    // react-native-camera:
+    missingDimensionStrategy 'react-native-camera', 'mlkit'
   }
   splits {
     abi {
@@ -154,6 +160,7 @@ android {
 }
 
 dependencies {
+    implementation project(':react-native-camera')
   //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:+"
   implementation fileTree(dir: "libs", include: ["*.jar"])
