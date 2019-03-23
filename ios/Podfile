@@ -45,6 +45,12 @@ target 'RNFirebaseTest' do
   pod 'Fabric', '~> 1.7.13'
   pod 'Crashlytics', '~> 3.10.9'
 
+  pod 'Firebase/MLVision', '~> 5.15.0'
+  pod 'Firebase/MLVisionLabelModel', '~> 5.15.0'
+  pod 'Firebase/MLVisionBarcodeModel', '~> 5.15.0'
+  pod 'Firebase/MLVisionTextModel', '~> 5.15.0'
+  pod 'Firebase/MLVisionFaceModel', '~> 5.15.0'
+
   pod 'react-native-camera', path: '../node_modules/react-native-camera', subspecs: [
     'FaceDetector',
     'TextDetector'
