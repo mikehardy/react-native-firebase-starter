@@ -1,4 +1,4 @@
-package com.invertase.rnfirebasestarter;
+package com.kullki.rnfirebasetest;
 
 import android.app.Application;
 
